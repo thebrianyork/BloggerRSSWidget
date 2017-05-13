@@ -1,2 +1,2 @@
 # BloggerRSSWidget
-Populates a tidy Tumblr sidebar widget with your Blogger RSS feed.
+Populates a tidy Tumblr sidebar widget using your Blogger RSS feed.
