@@ -62,5 +62,7 @@
 
 #blogger-data {
     width: 100%;
+    max-width: 300px;
     font-family: sans-serif;
+    margin-bottom: 20px;
 }
