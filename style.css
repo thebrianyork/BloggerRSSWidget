@@ -1,0 +1,66 @@
+#blogger-data ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#blogger-data li {
+    border: 1px;
+    border-radius: 10px;
+    border: 1px;
+    border-style: solid;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+}
+
+#blogger-data ul li:first-child {
+    margin: 0;
+}
+
+#blogger-data img {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+#blogger-data a {
+    text-decoration: none;
+    margin: 0;
+    display: block;
+    color: black;
+}
+
+#blogger-data a.blogger-title {
+    margin: 10px;
+}
+
+#blogger-data a.blogger-code {
+    font-size: .7em;
+    background-color: #aaaaaa;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#blogger-data a.blogger-code span {
+    margin-left: 10px;
+}
+
+#blogger-data p {
+    margin: 20px;
+}
+
+#blogger-data a.blogger-attribution {
+    background-color: black;
+    color: #aaaaaa;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    font-size: .8em;
+}
+
+#blogger-data {
+    width: 100%;
+    font-family: sans-serif;
+}
