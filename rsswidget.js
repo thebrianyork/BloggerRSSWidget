@@ -6,9 +6,10 @@ function listEntries(json) {
   var feedlen = json.feed.entry.length;
   var parser = new DOMParser();  
 
-  for (var i = (feedlen <= 3 ? feedlen : 3); i > 0; i--) {    
-    var entry = json.feed.entry[i];
-    var content = json.feed.entry[i].content.$t;
+  for (var i = 0; i < (feedlen <= 3 ? feedlen : 3); i++) {    
+    var entries = json.feed.entry.reverse();
+    var entry = entries[i];
+    var content = entries[i].content.$t;
     var dum = "<html><head><title>titleTest</title></head><body>" + content + "</body></html>";
     var post = parser.parseFromString(dum, "text/html");
     var img = post.getElementsByTagName('img').item(0);
