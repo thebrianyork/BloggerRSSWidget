@@ -6,7 +6,7 @@ function listEntries(json) {
   var feedlen = json.feed.entry.length;
   var parser = new DOMParser();  
 
-  for (var i = 0; i < (feedlen <= 3 ? feedlen : 3); i++) {    
+  for (var i = (feedlen <= 3 ? feedlen : 3); i >= 0; i--) {    
     var entry = json.feed.entry[i];
     var content = json.feed.entry[i].content.$t;
     var dum = "<html><head><title>titleTest</title></head><body>" + content + "</body></html>";
@@ -20,7 +20,7 @@ function listEntries(json) {
         for (var i = 0; i < m.length; i += 1) {
             r[m[i].getAttribute("name")] = m[i].getAttribute("content")
         }
-        return r.reverse();
+        return r;
     })();
 
     for (var k = 0; k < entry.link.length; k++) {
