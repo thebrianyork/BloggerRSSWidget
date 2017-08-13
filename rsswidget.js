@@ -20,7 +20,7 @@ function listEntries(json) {
         for (var i = 0; i < m.length; i += 1) {
             r[m[i].getAttribute("name")] = m[i].getAttribute("content")
         }
-        return r;
+        return r.reverse();
     })();
 
     for (var k = 0; k < entry.link.length; k++) {
